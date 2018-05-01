@@ -1,25 +1,32 @@
-<build>
-    <groupId>org.test</groupId>
-    <artifactId>some-lib</artifactId>
-    <version>1.0</version>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>deb-maven-plugin</artifactId>
-        <configuration>
-          <description>A test project</description>
-              <maintainer>Tim OBrien &lt;tobrien@discursive.com&gt;</maintainer>
-              <section>libs</section>
-              <priority>optional</priority>     
-              <architecture>all</architecture>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>deb</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	
+	<build>
+		<groupId>org.test</groupId>
+		<artifactId>some-lib</artifactId>
+		<version>1.0</version>
+		<plugins>
+		  <plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>deb-maven-plugin</artifactId>
+			<configuration>
+			  <description>A test project</description>
+				  <maintainer>Tim OBrien &lt;tobrien@discursive.com&gt;</maintainer>
+				  <section>libs</section>
+				  <priority>optional</priority>     
+				  <architecture>all</architecture>
+			</configuration>
+			<executions>
+			  <execution>
+				<goals>
+				  <goal>deb</goal>
+				</goals>
+			  </execution>
+			</executions>
+		  </plugin>
+		</plugins>
+	  </build>
+</project>

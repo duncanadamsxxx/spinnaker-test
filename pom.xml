@@ -21,7 +21,7 @@
 				  <architecture>all</architecture>
 				  <fileSets>
 					<fileSet>
-						<source>helloworld.java</source>
+						<source>target/spinnaker-demo-1.0.jar</source>
 						<target>/</target>
 					</fileSet>
 				  </fileSets>

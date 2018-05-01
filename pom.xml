@@ -11,7 +11,7 @@
 	<build>
 		<plugins>
 		  <plugin>
-			<groupId>org.codehaus.mojo</groupId>
+			<groupId>org.aerse.maven</groupId>
 			<artifactId>deb-maven-plugin</artifactId>
 			<configuration>
 			  <description>A test project</description>

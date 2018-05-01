@@ -1,0 +1,25 @@
+<build>
+    <groupId>org.test</groupId>
+    <artifactId>some-lib</artifactId>
+    <version>1.0</version>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>deb-maven-plugin</artifactId>
+        <configuration>
+          <description>A test project</description>
+              <maintainer>Tim OBrien &lt;tobrien@discursive.com&gt;</maintainer>
+              <section>libs</section>
+              <priority>optional</priority>     
+              <architecture>all</architecture>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>deb</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>

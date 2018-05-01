@@ -20,13 +20,6 @@
 				  <priority>optional</priority>     
 				  <architecture>all</architecture>
 			</configuration>
-			<executions>
-			  <execution>
-				<goals>
-				  <goal>deb</goal>
-				</goals>
-			  </execution>
-			</executions>
 		  </plugin>
 		</plugins>
 	  </build>

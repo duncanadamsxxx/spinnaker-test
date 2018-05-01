@@ -16,7 +16,7 @@ pipeline {
   }
   post {
       always {
-          sh "deb-s3 upload --bucket http://demo-repo-spinnaker.s3-website-us-east-1.amazonaws.com --arch amd64 --codename trusty --preserve-versions true target/*.deb"
+          sh "deb-s3 upload --bucket http://demo-repo-spinnaker.s3-website-us-east-1.amazonaws.com --arch amd64 --codename trusty --preserve-versions true target/*.jar"
 	  }
 	}
 }

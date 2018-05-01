@@ -1,7 +1,7 @@
 pipeline {
     agent { label "master" }
     stages {
-        stage {
+        stage("build artifact") {
 	    steps{
     checkout scm
     sh "ls -l"

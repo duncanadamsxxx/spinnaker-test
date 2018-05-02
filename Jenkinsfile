@@ -19,7 +19,7 @@ pipeline {
 		  //withCredentials([string(credentialsId: 'AKID', variable: 'access_key')], [string(credentialsId: 'SECRET', variable: 'secret_key')]) {
 		  withCredentials([string(credentialsId: 'AKID', variable: 'access_key')]) {
 				withCredentials([string(credentialsId: 'SECRET', variable: 'secret_key')]){
-					sh "deb-s3 upload --bucket demo-repo-spinnaker --arch amd64 --codename trusty --preserve-versions true target/*.jar --access-key-id=$access_key --secret-access-key=$secret_key"
+					sh "deb-s3 upload --bucket demo-repo-spinnaker --arch amd64 --codename trusty --preserve-versions true target/*.deb --access-key-id=$access_key --secret-access-key=$secret_key"
 				}
 			}
 		}

@@ -2,7 +2,7 @@ Package: spinnaker-demo
 Version: 1.0
 Section: misc
 Priority: optional
-Architecture: all
+Architecture: amd64
 Depends: jdk (>= 1.5)
 Maintainer: CTN
 Description: Simple java

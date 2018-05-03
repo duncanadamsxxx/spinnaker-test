@@ -96,8 +96,8 @@
 								<type>perm</type>
 								<prefix>/etc/init</prefix>
 								<filemode>644</filemode>
-								<user>ubuntu</user>
-								<group>ubuntu</group>
+								<user>root</user>
+								<group>root</group>
 							</mapper>
 						</data>
 					</dataSet>

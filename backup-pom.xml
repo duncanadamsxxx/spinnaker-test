@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>test.package</groupId>
+	<artifactId>spinnaker-demo</artifactId>
+	<version>1.0</version>
+	
+	<build>
+		<plugins>
+		  <plugin>
+			<!--<groupId>com.aerse.maven</groupId>-->
+			<groupId>org.vafer</groupId>
+			<!--<artifactId>deb-maven-plugin</artifactId>-->
+			<artifactId>jdeb</artifactId>
+			<version>1.6</version>
+			<!--<configuration>
+			  <description>A test project</description>
+				  <maintainer>Tim OBrien &lt;tobrien@discursive.com&gt;</maintainer>
+				  <section>libs</section>
+				  <priority>optional</priority>     
+				  <architecture>all</architecture>
+				  <fileSets>
+					<fileSet>
+						<source>target/spinnaker-demo-1.0.jar</source>
+						<target>/</target>
+					</fileSet>
+				  </fileSets>
+			</configuration>-->
+			<executions>
+				<execution>
+					<phase>package</phase>
+					<goals>
+						<goal>jdeb</goal>
+					</goals>
+				<configuration>
+					<dataSet>
+						<data>
+							<src>${project.build.directory}/${project.build.finalName}.jar</src>
+							<type>file</type>
+							<mapper>
+								<type>perm</type>
+								<prefix>/usr/share/jdeb/lib</prefix>
+							</mapper>
+						</data>
+					</dataSet>
+				</configuration>
+				</execution>
+			</executions>
+		  </plugin>
+		</plugins>
+	  </build>
+</project>

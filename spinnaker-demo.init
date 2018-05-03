@@ -1,0 +1,3 @@
+#!/bin/sh
+
+java -jar /usr/share/jdeb/lib/spinnaker-demo-1.0.jar

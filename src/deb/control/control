@@ -7,4 +7,4 @@ Depends: jdk (>= 1.5)
 Maintainer: CTN
 Description: Simple java
 Distribution: main
-Depends: default-jre | java7-runtime
+Depends: default-jre | java8-runtime
